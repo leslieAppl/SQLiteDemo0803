@@ -11,5 +11,5 @@
 
 ## Save Data to the SQLite Database
 
-## 
+## Extract Data from the SQLite Database
 
