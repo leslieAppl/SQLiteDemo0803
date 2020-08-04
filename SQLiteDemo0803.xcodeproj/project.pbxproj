@@ -14,6 +14,11 @@
 		CE5F0A1924D7DDA1008AE823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5F0A1824D7DDA1008AE823 /* Assets.xcassets */; };
 		CE5F0A1C24D7DDA1008AE823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5F0A1A24D7DDA1008AE823 /* LaunchScreen.storyboard */; };
 		CE5F0A2524D7E098008AE823 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5F0A2424D7E098008AE823 /* libsqlite3.tbd */; };
+		CE987E3E24D90C0A00485BCA /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CE987E3424D90C0A00485BCA /* FMResultSet.m */; };
+		CE987E3F24D90C0B00485BCA /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE987E3524D90C0A00485BCA /* FMDatabasePool.m */; };
+		CE987E4024D90C0B00485BCA /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CE987E3924D90C0A00485BCA /* FMDatabaseQueue.m */; };
+		CE987E4124D90C0B00485BCA /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE987E3A24D90C0A00485BCA /* FMDatabaseAdditions.m */; };
+		CE987E4224D90C0B00485BCA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CE987E3C24D90C0A00485BCA /* FMDatabase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,18 @@
 		CE5F0A1B24D7DDA1008AE823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE5F0A1D24D7DDA1008AE823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE5F0A2424D7E098008AE823 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CE987E3224D90C0A00485BCA /* SQLiteDemo0803-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQLiteDemo0803-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE987E3324D90C0A00485BCA /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = ../../../../Xcode_GitHubDepository/fmdb/src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		CE987E3424D90C0A00485BCA /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = ../../../../Xcode_GitHubDepository/fmdb/src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		CE987E3524D90C0A00485BCA /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = ../../../../Xcode_GitHubDepository/fmdb/src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		CE987E3624D90C0A00485BCA /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = ../../../../Xcode_GitHubDepository/fmdb/src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		CE987E3724D90C0A00485BCA /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = ../../../../Xcode_GitHubDepository/fmdb/src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		CE987E3824D90C0A00485BCA /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = ../../../../Xcode_GitHubDepository/fmdb/src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		CE987E3924D90C0A00485BCA /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = ../../../../Xcode_GitHubDepository/fmdb/src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		CE987E3A24D90C0A00485BCA /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = ../../../../Xcode_GitHubDepository/fmdb/src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		CE987E3B24D90C0A00485BCA /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = ../../../../Xcode_GitHubDepository/fmdb/src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		CE987E3C24D90C0A00485BCA /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = ../../../../Xcode_GitHubDepository/fmdb/src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		CE987E3D24D90C0A00485BCA /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = ../../../../Xcode_GitHubDepository/fmdb/src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +77,7 @@
 		CE5F0A0E24D7DD9D008AE823 /* SQLiteDemo0803 */ = {
 			isa = PBXGroup;
 			children = (
+				CE987E3124D90B8E00485BCA /* FMDB */,
 				CE5F0A0F24D7DD9D008AE823 /* AppDelegate.swift */,
 				CE5F0A1124D7DD9D008AE823 /* SceneDelegate.swift */,
 				CE5F0A1324D7DD9D008AE823 /* ViewController.swift */,
@@ -77,6 +95,25 @@
 				CE5F0A2424D7E098008AE823 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE987E3124D90B8E00485BCA /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				CE987E3824D90C0A00485BCA /* FMDatabase.h */,
+				CE987E3C24D90C0A00485BCA /* FMDatabase.m */,
+				CE987E3624D90C0A00485BCA /* FMDatabaseAdditions.h */,
+				CE987E3A24D90C0A00485BCA /* FMDatabaseAdditions.m */,
+				CE987E3324D90C0A00485BCA /* FMDatabasePool.h */,
+				CE987E3524D90C0A00485BCA /* FMDatabasePool.m */,
+				CE987E3B24D90C0A00485BCA /* FMDatabaseQueue.h */,
+				CE987E3924D90C0A00485BCA /* FMDatabaseQueue.m */,
+				CE987E3724D90C0A00485BCA /* FMDB.h */,
+				CE987E3D24D90C0A00485BCA /* FMResultSet.h */,
+				CE987E3424D90C0A00485BCA /* FMResultSet.m */,
+				CE987E3224D90C0A00485BCA /* SQLiteDemo0803-Bridging-Header.h */,
+			);
+			path = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +148,7 @@
 				TargetAttributes = {
 					CE5F0A0B24D7DD9D008AE823 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -152,7 +190,12 @@
 			files = (
 				CE5F0A1424D7DD9D008AE823 /* ViewController.swift in Sources */,
 				CE5F0A1024D7DD9D008AE823 /* AppDelegate.swift in Sources */,
+				CE987E3F24D90C0B00485BCA /* FMDatabasePool.m in Sources */,
+				CE987E3E24D90C0A00485BCA /* FMResultSet.m in Sources */,
 				CE5F0A1224D7DD9D008AE823 /* SceneDelegate.swift in Sources */,
+				CE987E4124D90C0B00485BCA /* FMDatabaseAdditions.m in Sources */,
+				CE987E4024D90C0B00485BCA /* FMDatabaseQueue.m in Sources */,
+				CE987E4224D90C0B00485BCA /* FMDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PDY29GF949;
 				INFOPLIST_FILE = SQLiteDemo0803/Info.plist;
@@ -305,6 +349,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.appl.leslie.SQLiteDemo0803;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLiteDemo0803/FMDB/SQLiteDemo0803-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -314,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PDY29GF949;
 				INFOPLIST_FILE = SQLiteDemo0803/Info.plist;
@@ -323,6 +370,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.appl.leslie.SQLiteDemo0803;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLiteDemo0803/FMDB/SQLiteDemo0803-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
