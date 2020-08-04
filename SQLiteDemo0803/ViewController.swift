@@ -31,6 +31,11 @@ class ViewController: UIViewController {
         
         if !filemgr.fileExists(atPath: databasePath) {
             
+            ///0. create Database
+            ///1. open Database
+            ///2. prepares a SQL statement to create the contacts table in the database
+            ///3. executes it via a call to the FMDB executeStatements method of the database instance.
+            ///4. close Database
             let contactDB = FMDatabase(path: databasePath)
             
             if contactDB.open() {
@@ -50,6 +55,31 @@ class ViewController: UIViewController {
     }
     
     @IBAction func saveBtnPressed(_ sender: UIButton) {
+        ///0. create Database
+        ///1. open Database
+        ///2. prepares a SQL statement to create the contacts table in the database
+        ///3. executes it via a call to the FMDB executeStatements method of the database instance.
+        ///4. close Database
+        let contactDB = FMDatabase(path: databasePath)
+        
+        if contactDB.open() {
+            let insertSQL = "INSERT INTO CONTACTS (name, address, phone) VALUES ('\(name.text ?? "")', '\(address.text ?? "")', '\(phone.text ?? "")')"
+            
+            do {
+                try contactDB.executeUpdate(insertSQL, values: nil)
+            } catch {
+                statusLbl.text = "Failed to add contact"
+                print("Error: \(error.localizedDescription)")
+            }
+            
+            statusLbl.text = "Contact Added"
+            name.text = ""
+            address.text = ""
+            phone.text = ""
+
+        } else {
+            print("Error: \(contactDB.lastErrorMessage())")
+        }
         
     }
 
